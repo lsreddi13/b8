@@ -12,13 +12,14 @@ public class FBdemo {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(options);
+		
 		driver.get("http://www.fb.com");
 		driver.manage().window().maximize();
 		
 		
 		WebElement email_ele   = driver.findElement(By.id("email"));
 		
-		WebElement pwd_ele   = driver.findElement(By.name("pass"));
+		WebElement pwd_ele   = driver.findElement(By.cssSelector(".inputtext._55r1._6luy._9npi"));
 		
 		WebElement loginBtn_ele = driver.findElement(By.name("login"));
 		
