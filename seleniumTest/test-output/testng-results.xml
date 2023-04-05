@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-21T07:48:50 IST" name="Default suite" finished-at="2023-03-21T07:48:50 IST" duration-ms="55">
+  <suite started-at="2023-04-05T07:12:30 IST" name="Default suite" finished-at="2023-04-05T07:12:41 IST" duration-ms="10255">
     <groups>
     </groups>
-    <test started-at="2023-03-21T07:48:50 IST" name="Default test" finished-at="2023-03-21T07:48:50 IST" duration-ms="55">
-      <class name="com.java.oops.poly.DemoOverloading">
-        <test-method signature="testSum()[pri:0, instance:com.java.oops.poly.DemoOverloading@6574a52c]" started-at="2023-03-21T07:48:50 IST" name="testSum" finished-at="2023-03-21T07:48:50 IST" duration-ms="11" status="PASS">
+    <test started-at="2023-04-05T07:12:30 IST" name="Default test" finished-at="2023-04-05T07:12:41 IST" duration-ms="10255">
+      <class name="com.selenium.windows.DemoWindow4">
+        <test-method signature="test()[pri:0, instance:com.selenium.windows.DemoWindow4@368247b9]" started-at="2023-04-05T07:12:30 IST" name="test" finished-at="2023-04-05T07:12:41 IST" duration-ms="10150" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSum -->
-      </class> <!-- com.java.oops.poly.DemoOverloading -->
+        </test-method> <!-- test -->
+      </class> <!-- com.selenium.windows.DemoWindow4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
