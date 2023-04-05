@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.example.DemoFBMethods">
+      <class name="com.selenium.mousehover.DemoTooltip">
         <methods>
-          <include name="testcase1"/>
+          <include name="testTooltip"/>
         </methods>
-      </class> <!-- com.selenium.example.DemoFBMethods -->
+      </class> <!-- com.selenium.mousehover.DemoTooltip -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
