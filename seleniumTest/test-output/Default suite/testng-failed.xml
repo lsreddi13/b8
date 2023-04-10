@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.mousehover.DemoTooltip">
+      <class name="com.selenium.testng.DemoDependencyOnMethods">
         <methods>
-          <include name="testTooltip"/>
+          <include name="loginUser"/>
         </methods>
-      </class> <!-- com.selenium.mousehover.DemoTooltip -->
+      </class> <!-- com.selenium.testng.DemoDependencyOnMethods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
