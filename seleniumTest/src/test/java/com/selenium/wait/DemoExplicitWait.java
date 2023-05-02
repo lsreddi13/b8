@@ -21,7 +21,7 @@ public class DemoExplicitWait {
 		co.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(co);
 		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

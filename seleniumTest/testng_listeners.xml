@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Listener test Suite">
+	<listeners>
+		<!-- <listener class-name="com.selenium.testng.listeners.Listener" /> -->
+		<listener class-name = "com.selenium.testng.listeners.Listener" />
+		
+	
+	</listeners>
+
+	<test thread-count="5" name="Testing listeners class">
+		<classes>
+			<class name="com.selenium.testng.listeners.DemoApplyListeners" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

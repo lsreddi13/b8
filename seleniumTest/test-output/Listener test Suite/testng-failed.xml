@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Listener test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.selenium.testng.listeners.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Testing listeners class">
+    <classes>
+      <class name="com.selenium.testng.listeners.DemoApplyListeners"/>
+    </classes>
+  </test> <!-- Testing listeners class -->
+  <test parallel="none" name="Testing listeners class(failed)">
+    <classes>
+      <class name="com.selenium.testng.listeners.DemoApplyListeners">
+        <methods>
+          <include name="deleteUser"/>
+          <include name="launchApplication"/>
+          <include name="loginUser"/>
+        </methods>
+      </class> <!-- com.selenium.testng.listeners.DemoApplyListeners -->
+    </classes>
+  </test> <!-- Testing listeners class(failed) -->
+</suite> <!-- Failed suite [Listener test Suite] -->
