@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DemoGoogleScreenshot {
@@ -33,6 +34,11 @@ public class DemoGoogleScreenshot {
 		
 		File s2 = googleInput.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(s2, new File(".//screnshots//s2.png"));
+		
+		Assert.assertEquals("sasi", "sasi", "error");
+		Assert.assertNotNull(s2);
+		
+		Assert.assertNull(s2);
 		
 		
 	}

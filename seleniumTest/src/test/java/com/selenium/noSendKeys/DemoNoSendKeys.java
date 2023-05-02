@@ -15,21 +15,32 @@ public class DemoNoSendKeys {
 	@Test
 	public void test() throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-allow-origins=*");
+		options.addArguments("--remote-allow-origins=*"); 
 		driver = new ChromeDriver(options);
 		driver.get("http://www.fb.com");
-		
-		
+
 		WebElement name = driver.findElement(By.id("email"));
-		name.sendKeys("sasidhar");
+		WebElement passwd = driver.findElement(By.id("pass"));
+//		name.sendKeys("sasidhar");
+
+		Thread.sleep(3000);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		js.executeScript("arguments[0].value='Selenium'", name);
 		
-		Thread.sleep(5000);
+		js.executeScript("arguments[0].value='Automation123'", passwd);
+
+		((JavascriptExecutor) driver).executeScript("arguments[0].value='Selenium'",
+				driver.findElement(By.id("email")));
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;  
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 		
-		js.executeAsyncScript("arguments[0].value='Selenium'", name);
-		
-		//how to enter text into the input box without using sendkeys in selenium
+		((JavascriptExecutor) driver).executeScript("arguments[0].value='Selenium12345'",
+				driver.findElement(By.id("pass")));
+
+		// how to enter text into the input box without using sendkeys in selenium
 
 	}
 }

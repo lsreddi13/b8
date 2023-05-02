@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="8" passed="3" failed="0" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-10T07:55:11 IST" name="Suite" finished-at="2023-04-10T07:55:12 IST" duration-ms="66">
+  <suite started-at="2023-05-02T02:23:16Z" name="Default suite" finished-at="2023-05-02T02:23:45Z" duration-ms="28181">
     <groups>
-      <group name="leaveTestcases">
-        <method signature="DemoGroups.applyLeave()[pri:1, instance:com.selenium.testng.DemoGroups@6e9175d8]" name="applyLeave" class="com.selenium.testng.DemoGroups"/>
-        <method signature="DemoGroups.approveLeave()[pri:3, instance:com.selenium.testng.DemoGroups@6e9175d8]" name="approveLeave" class="com.selenium.testng.DemoGroups"/>
-        <method signature="DemoGroups.verifyLeaveHistory()[pri:8, instance:com.selenium.testng.DemoGroups@6e9175d8]" name="verifyLeaveHistory" class="com.selenium.testng.DemoGroups"/>
-      </group> <!-- leaveTestcases -->
     </groups>
-    <test started-at="2023-04-10T07:55:11 IST" name="Test" finished-at="2023-04-10T07:55:12 IST" duration-ms="66">
-      <class name="com.selenium.testng.DemoGroups">
-        <test-method signature="applyLeave()[pri:1, instance:com.selenium.testng.DemoGroups@6e9175d8]" started-at="2023-04-10T07:55:11 IST" name="applyLeave" finished-at="2023-04-10T07:55:12 IST" duration-ms="8" status="PASS">
+    <test started-at="2023-05-02T02:23:16Z" name="Default test" finished-at="2023-05-02T02:23:45Z" duration-ms="28181">
+      <class name="com.tests.LoginTest">
+        <test-method signature="testLoginLogoutFlow()[pri:0, instance:com.tests.LoginTest@291f18]" started-at="2023-05-02T07:53:16Z" name="testLoginLogoutFlow" finished-at="2023-05-02T07:53:44Z" duration-ms="28168" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- applyLeave -->
-        <test-method signature="approveLeave()[pri:3, instance:com.selenium.testng.DemoGroups@6e9175d8]" started-at="2023-04-10T07:55:12 IST" name="approveLeave" finished-at="2023-04-10T07:55:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- approveLeave -->
-        <test-method signature="verifyLeaveHistory()[pri:8, instance:com.selenium.testng.DemoGroups@6e9175d8]" started-at="2023-04-10T07:55:12 IST" name="verifyLeaveHistory" finished-at="2023-04-10T07:55:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLeaveHistory -->
-      </class> <!-- com.selenium.testng.DemoGroups -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testLoginLogoutFlow -->
+      </class> <!-- com.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
