@@ -14,13 +14,13 @@ public class LoginPage extends Base {
 	WebElement emailID = driver.findElement(By.name("username"));
 //	@FindBy(name = "username")
 //	WebElement emailID;
-	
+
 	// enter username
 	WebElement pwd = driver.findElement(By.name("password"));
 	// enter username
 	WebElement loginBtn = driver.findElement(RelativeLocator.with(By.tagName("button")).below(pwd));
 //    
-	
+
 //	public LoginPage() {
 //		PageFactory.initElements(driver, this);
 //	}
@@ -29,9 +29,10 @@ public class LoginPage extends Base {
 		emailID.sendKeys(n);
 
 	}
+
 	public void enterPassword(String p) {
-		
 		pwd.sendKeys(p);
+		childTest = parentTest.createNode("user entered password successfully");
 	}
 
 	public void clickLoginBtn() {
