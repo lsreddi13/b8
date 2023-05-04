@@ -6,7 +6,19 @@
   </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.selenium.testng.listeners.DemoApplyListeners"/>
+      <class name="com.tests.LoginTest"/>
     </classes>
   </test> <!-- Test -->
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.tests.LoginTest">
+        <methods>
+          <include name="setUpReports"/>
+          <include name="testLoginLogoutFlow"/>
+          <include name="testNewUserLogin"/>
+          <include name="closeReport"/>
+        </methods>
+      </class> <!-- com.tests.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

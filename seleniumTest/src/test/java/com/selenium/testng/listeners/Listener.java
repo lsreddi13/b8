@@ -1,14 +1,18 @@
 package com.selenium.testng.listeners;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listener implements ITestListener {
+import com.base.Base;
+
+public class Listener extends Base implements ITestListener {
 
 	public String timeDisplay() {
 		DateFormat dateFormat2 = new SimpleDateFormat("dd-MMM-yyyy hh.mm aa");
@@ -28,15 +32,20 @@ public class Listener implements ITestListener {
 
 	}
 
-	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("i am onTestFailure -- " + result.getName() +" - "+ timeDisplay());
+		System.out.println("i am onTestFailure -- " + result.getName() + " - " + timeDisplay());
+		try {
+			takeScreenshot(driver, result.getName() + " - " + timeDisplay());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("i am onTestSkipped - " + result.getName() +" - "+ timeDisplay());
+		System.out.println("i am onTestSkipped - " + result.getName() + " - " + timeDisplay());
 
 	}
 
@@ -48,13 +57,13 @@ public class Listener implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
-		System.out.println("i am onStart "+ context.getName() +" - "+ timeDisplay());
+		System.out.println("i am onStart " + context.getName() + " - " + timeDisplay());
 
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("i am onFinish - " + context.getName() +" - "+ timeDisplay());
+		System.out.println("i am onFinish - " + context.getName() + " - " + timeDisplay());
 
 	}
 
