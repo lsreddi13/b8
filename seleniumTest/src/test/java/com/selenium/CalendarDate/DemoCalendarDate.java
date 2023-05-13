@@ -23,7 +23,7 @@ public class DemoCalendarDate {
 
 		driver.findElement(By.xpath("//div[contains(text(), 'Departure Date')]")).click();
 
-		selectDate("May", "2");
+		selectDate("May", "20");
 		
 		driver.findElement(By.xpath("//div[contains(text(), 'Return Date')]")).click();
 		

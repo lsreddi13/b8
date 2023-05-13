@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.selenium.testng.listeners.Listener"/>
-  </listeners>
+<suite parallel="false" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="ESSUser" value="karthik"/>
+  <parameter name="password1" value="sasi123"/>
+  <parameter name="username1" value="sasidhar"/>
+  <parameter name="url" value="https://www.facebook.com/"/>
+  <parameter name="ESSPwd" value="karthik123"/>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.tests.LoginTest"/>
+      <class name="com.selenium.testng.DemoParameterization"/>
     </classes>
   </test> <!-- Test -->
-  <test parallel="none" name="Test(failed)">
+  <test parallel="false" name="Test(failed)">
     <classes>
-      <class name="com.tests.LoginTest">
+      <class name="com.selenium.testng.DemoParameterization">
         <methods>
-          <include name="setUpReports"/>
-          <include name="testLoginLogoutFlow"/>
-          <include name="testNewUserLogin"/>
-          <include name="closeReport"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tests.LoginTest -->
+      </class> <!-- com.selenium.testng.DemoParameterization -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
