@@ -1,5 +1,6 @@
 package com.selenium.testng;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
@@ -20,6 +21,7 @@ public class DemoParameterization {
 	public void testLogin(@Optional("divya") String s1, @Optional("divya123") String s2) {
 		System.out.println("user name  -- " + s1);
 		System.out.println("password   -- " + s2);
+		Assert.assertEquals(true, true);
 
 	}
 	
